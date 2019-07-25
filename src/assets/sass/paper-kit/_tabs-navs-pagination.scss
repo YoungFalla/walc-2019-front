@@ -26,8 +26,9 @@
         .nav-item{
             .nav-link{
                 border: 0 none;
-                color: $other-medium-gray;
+                color: #030303;
                 background-color: transparent;
+                font-weight: bold ;
             }
             .nav-link:hover{
                 color: $font-color;

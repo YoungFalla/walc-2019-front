@@ -16,10 +16,13 @@ export class Track1Component implements OnInit {
   public track: Track
   public description: []
   public iconTrack;
+  public preRequisitos = new Array()
+  public track6: Boolean = false;
+  public requisitosSoftWareTrack6;
   constructor(private activatedRoute: ActivatedRoute, 
     private _userService: UserService) { 
       this.token = this._userService.getToken()
-      this.track = new Track("","",[],"","","","","","","","","","","","",[])
+      this.track = new Track("","",[],[],[],"","",[],"","",[],"","","","",[])
     }
 
   ngOnInit() {
@@ -33,7 +36,12 @@ export class Track1Component implements OnInit {
         this.track = response.track;
         this.description = response.track.descripcion
         this.iconTrack = response.track.icon;
-        console.log(this.description);
+        this.preRequisitos = this.track.preRequisito
+        if (this.track._id == "5d39e4c2e7179a064fa9172c") {
+          this.track6 = true;
+          console.log(this.preRequisitos[2].preReq.split(' '));
+          this.requisitosSoftWareTrack6 = this.preRequisitos[2].preReq.split(' ')
+        }
         
       }
     )

@@ -16,6 +16,7 @@ export class NavComponent implements OnInit {
   private toggleButton: any;
   private sidebarVisible: boolean;
   public tracks: Track
+  public tracksArray = new Array()
   constructor(private _userService: UserService, private _router: Router,private element : ElementRef) { 
     this.identity = this._userService.getIdentity();
     this.token = this._userService.getToken();
@@ -44,6 +45,7 @@ export class NavComponent implements OnInit {
       response=>{
         this.tracks = response.tracks
         console.log(response);
+     
         
       }
     )
@@ -54,8 +56,13 @@ export class NavComponent implements OnInit {
     var myurl = `${url}/${id}`;
     this._router.navigateByUrl(myurl).then(e => {
       if (e) {
+        url = ""
+        id= ""
+        window.location.reload()
         console.log("Navigation is successful!");
       } else {
+        url = ""
+        id= ""
         console.log("Navigation has failed!");
       }
     });

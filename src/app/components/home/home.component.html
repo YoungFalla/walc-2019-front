@@ -1,4 +1,10 @@
-<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/walck2019.jpg');">
+<div class="page-header responsive-home" data-parallax="true" style="
+        background-image: url('https://imagenes-walc2019.s3.amazonaws.com/walc2019.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;  
+">
 
     <div class="container">
         <div class="motto text-center">
@@ -87,7 +93,8 @@
                             </p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="http://eslared.net/walc2019/?page_id=84&lang=es_ES" class="btn btn-outline-warning btn-round">Ver más</a>
+                            <a href="http://eslared.net/walc2019/?page_id=84&lang=es_ES"
+                                class="btn btn-outline-warning btn-round">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +118,8 @@
                             </p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="http://eslared.net/walc2019/?page_id=86&lang=es_ES" class="btn btn-outline-warning btn-round">Ver más</a>
+                            <a href="http://eslared.net/walc2019/?page_id=86&lang=es_ES"
+                                class="btn btn-outline-warning btn-round">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +145,8 @@
                             </p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="http://eslared.net/walc2019/?page_id=90&lang=es_ES" class="btn btn-outline-warning btn-round">Ver más</a>
+                            <a href="http://eslared.net/walc2019/?page_id=90&lang=es_ES"
+                                class="btn btn-outline-warning btn-round">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +173,8 @@
                             </p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="http://eslared.net/walc2019/?page_id=1172&lang=es_ES" class="btn btn-outline-warning btn-round">Ver más</a>
+                            <a href="http://eslared.net/walc2019/?page_id=1172&lang=es_ES"
+                                class="btn btn-outline-warning btn-round">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -191,7 +201,8 @@
                             </p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="http://eslared.net/walc2019/?page_id=1594&lang=es_ES" class="btn btn-outline-warning btn-round">Ver más</a>
+                            <a href="http://eslared.net/walc2019/?page_id=1594&lang=es_ES"
+                                class="btn btn-outline-warning btn-round">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -208,22 +219,20 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Name</label>
-                                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Name" (focus)="focus=true"
-                                        (blur)="focus=false">
+                                    <input type="text" class="form-control" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Email</label>
-                                <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"> <i class="nc-icon nc-email-85"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus1=true"
-                                        (blur)="focus1=false">
+                                    <input type="text" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                         </div>

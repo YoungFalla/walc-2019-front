@@ -10,14 +10,11 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/home">Inicio <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/conferencias" >Conferencias</a>
-          </li>
           <li class="nav-item ">
               <div ngbDropdown class="d-inline-block dropdown">
-                <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Dropdown</a>
-                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary" *ngFor="let tra of tracks">
-                  <a class="dropdown-item" (click)="goTo('track', tra._id)">{{tra.titulo}}</a>
+                <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Informacion Tracks</a>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary" >
+                  <a *ngFor="let tra of tracks"  class="dropdown-item" (click)="goTo('track', tra._id)">{{tra.titulo}}</a>
                 </div>
               </div>
           </li>
